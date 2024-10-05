@@ -12,9 +12,9 @@ interface VideoBlockProps {
 const VideoBlock: React.FC<VideoBlockProps> = ({ title, channel, views, timestamp, thumbnailUrl, onDragStart}) => {
   return (
     <div 
-        draggable
-        onDragStart={(event) => onDragStart(event, title)} // Call the onDragStart function
-        className="flex space-x-4 p-2 rounded hover:bg-[#292929] transition duration-200"
+      draggable
+      onDragStart={(event) => onDragStart(event, title)} // Call the onDragStart function
+      className="flex space-x-4 p-2 rounded hover:bg-[#292929] transition duration-200"
     >
       <img src={thumbnailUrl} width={'25%'} alt={title} className="h-23 rounded"/>
       <div className="flex flex-col">
