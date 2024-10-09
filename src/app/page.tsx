@@ -1,7 +1,6 @@
 import Image from "next/image";
 import VideoRecommendations from "./components/VideoRecommendations";
 import VideoBlock from "./components/VideoBlock";
-import { Analytics } from "@vercel/analytics/react"
 
 // Set rule that users can't go back once they attach a video to their chain 
 export default function Home() {
