@@ -12,7 +12,7 @@ interface Article {
 const ArticleRecommendations: React.FC = () => {
     const [articles, setArticles] = useState<Article[]>([]);
     const [globalArticleChain, setglobalArticleChain] = useAtom(articleDataAtom)
-    const [currentTitle, setCurrentTitle] = useState<string>('Technoblade'); 
+    const [currentTitle, setCurrentTitle] = useState<string>('One Piece'); 
 
 
     const fetchRelatedArticles = async () => {
