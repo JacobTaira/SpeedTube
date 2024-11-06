@@ -1,9 +1,10 @@
-import Image from "next/image";
-import VideoRecommendations from "./components/VideoRecommendations";
-import VideoBlock from "./components/VideoBlock";
+import ArticleRecommendations from "./components/ArticleRecommendations";
+import ArticleChain from "./components/ArticleChain";
 
 // Set rule that users can't go back once they attach a video to their chain 
 export default function Home() {
+
+
   return (
     <div className="min-h-screen bg-[#151515] text-white p-8">
 
@@ -17,13 +18,14 @@ export default function Home() {
 
 
     <div className="flex justify-between pt-8">
-      <div className="bg-[#1f1f1f] rounded-lg p-6 w-[60%] h-[82.5vh] border-white border-1">
-        <p></p>
+      <div className="bg-[#1f1f1f] rounded-lg p-6 w-[60%] h-[82.5vh] border-white border-1 overflow-y-auto">
+        <p className="text-2xl font-bold mb-5">Article Chain:</p>
+        <ArticleChain/>
       </div>
 
-      <div className="bg-[#1f1f1f] rounded-lg p-6 w-[38.5%] h-[82.5vh] border-white border-1">
-        <p></p>
-        <VideoRecommendations/>
+      <div className="bg-[#1f1f1f] rounded-lg p-6 w-[38.5%] h-[82.5vh] border-white border-1 overflow-y-auto">
+        <p className="text-2xl font-bold mb-5">Article Recommendations:</p>
+        <ArticleRecommendations/>
       </div>
     </div>
 
